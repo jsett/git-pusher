@@ -3,10 +3,10 @@ const git = require('isomorphic-git');
 const fs = require('fs');
 git.plugins.set('fs', fs)
 
-await git.clone({
+git.clone({
   dir: 'test',
-  corsProxy: 'https://cors.isomorphic-git.org',
-  url: 'https://github.com/isomorphic-git/isomorphic-git',
+  url: 'https://github.com/zonpython/test2.git',
   singleBranch: true,
   depth: 1
 })
+console.log("done")
